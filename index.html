@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crie uma Playlist</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	</head>
+	<body>
+		<div id="main">
+			<center><h1>PLAYLIST</h1></center>
+			<center>
+				<div id="border">
+					<div id="playlists">
+					
+					</div>
+				</div>
+				<button id="add-playlist" onclick="addPlaylist();"> Add Playlist </button>
+			</center>
+		</div>
+		<script>
+			function addPlaylist()
+			{
+				try
+				{
+					const nomeDaPlaylist = prompt("Nome da Playlist");
+					const elementoPlaylist = document.createElement("p");
+					elementoPlaylist.innerHTML = `${nomeDaPlaylist} (vazia)`;
+					document.getElementById("playlists").appendChild(elementoPlaylist);
+				}
+				catch(err)
+				{
+					console.log(`Message ERROR: ${err}`);
+				}
+			}
+		</script>
+	</body>
+</html>

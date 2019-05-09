@@ -1,0 +1,20 @@
+body
+{
+	font-size: 98%;
+	font-family: Arial;
+}
+#border
+{
+	border: 2px solid black;
+	width: 25%;
+	height: 415px;
+}
+#add-playlist
+{
+	font-family: Arial;
+	font-size: 98%;
+	width: 25%;
+	height: 30px;
+	margin-top: 20px;
+}
+#add-playlist:hover{cursor: pointer; color: lightgrey;}
